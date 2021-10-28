@@ -16,19 +16,33 @@ chains.append(markov_chain)
 ____________________________________________________________________________________________________________________________________________________________________
 
 Part: 1
+
 SpongeBob: Well, I'm not the judge of me!
+
 Roderick: Keep your eyes will be carted out in your granny's hand basket.
+
 Mrs. Puff: You don't want to hear your stomach growling.
+
 Patrick: I'm trying to eat my sea chimps his loyal servants.
+
 Plankton: Out of my mind.
+
 Patrick: Well, I've got the best ideas.
+
 SpongeBob: You got a new clock, boy-o.
+
 Squidward: Oh, don't you use this stuff to go find Gary.
+
 Police fish #1: We've got work to do.
+
 Squidward: It's been your constant encouragement that has to do with this?
+
 Patrick: It stopped working so I could tell you something, mister.
+
 SpongeBob: Thanks for the patty toward a sleeping SpongeBob.
+
 Monroe: It's a tiny pipsqueak like you need a new boat.
+
 Plankton: I've never seen another creature that is makes the wood-shaped alarm clock rings
 with Patrick making sound effects in the same place for 20 years and you've never noticed
 ingredients of the window, a truck with a ball.
