@@ -1,0 +1,71 @@
+!pip install markovify
+!pip install pronouncing
+
+
+
+
+import os
+import markovify
+from textblob import TextBlob
+import textwrap
+import nltk
+import pronouncing
+import random
+import string
+import re
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+
+
+PATH = '/content/training/'
+filename1 = 'spongebob.txt'
+filename2 = 'spongebob2.txt'
+filename3 = 'spongebob3.txt'
+
+n = 50
+chains = []
+novel = " "
+
+for filename in os.listdir(PATH):
+  content = open(f'{PATH}{filename1}', 'r').readlines()
+  markov_chain = markovify.Text(content)
+  chains.append(markov_chain)
+
+for filename in os.listdir(PATH):
+  content = open(f'{PATH}{filename2}', 'r').readlines()
+  markov_chain = markovify.Text(content)
+  chains.append(markov_chain)
+
+for filename in os.listdir(PATH):
+  content = open(f'{PATH}{filename3}', 'r').readlines()
+  markov_chain = markovify.Text(content)
+  chains.append(markov_chain)
+
+model = markovify.combine(chains)
+count = 2
+novel += "THE LONGEST SPONGEBOB PLAY EVER \n \n \n"
+novel += "Part: 1 \n \n"
+for lp in range(13500):
+  
+  sentence = model.make_sentence()
+  stringsentence = str(sentence)
+  test = random.randint(1,165)
+  
+  if (len(stringsentence) == 4):
+    pass
+  if ( ":" in stringsentence):
+    novel += sentence
+    novel += " "
+    novel += "\n"
+  if (test==4):
+      novel += "\nPart: "+str(count)+"\n\n"
+      count = count+1
+
+
+
+
+
+#print(textwrap.fill(novel,n))
+
+with open("/content/testBOOK.txt","w",errors="surrogateescape") as f:
+  f.write(novel)
