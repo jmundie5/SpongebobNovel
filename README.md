@@ -6,6 +6,6 @@ I was inspired to take this route after watching Professor Whalen demonstrate a 
 To use this code, the user must create a folder in the working directory named 'training'. Once text files are loaded into this folder, this for loop is modular and can be added infinitely for each file you wish to read in. Just fix the filename3 variable. 
 
 for filename in os.listdir(PATH):
-  content = open(f'{PATH}{**filename3**}', 'r').readlines()
-  markov_chain = markovify.Text(content)
-  chains.append(markov_chain)
+content = open(f'{PATH}{**filename3**}', 'r').readlines()
+markov_chain = markovify.Text(content)
+chains.append(markov_chain)
